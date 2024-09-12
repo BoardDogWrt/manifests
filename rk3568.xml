@@ -4,27 +4,27 @@
           fetch="."
           revision="refs/heads/master" />
 
-  <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi6-v6.1.y" />
-  <project path="u-boot" name="uboot-rockchip" remote="origin" revision="refs/heads/nanopi5-v2017.09" />
-  <project path="rkbin" name="rkbin" remote="origin" revision="refs/heads/nanopi5" />
+  <project path="kernel" name="kernel-rockchip" remote="origin" revision="refs/heads/nanopi6-v6.1.y-boarddogwrt" />
+  <project path="u-boot" name="uboot-rockchip" remote="origin" revision="refs/heads/nanopi5-v2017.09-boarddogwrt" />
+  <project path="rkbin" name="rkbin" remote="origin" revision="refs/heads/nanopi5-boarddogwrt" />
 
-  <project path="scripts/sd-fuse" name="sd-fuse_rk3568" remote="origin" revision="refs/heads/kernel-6.1.y">
+  <project path="scripts/sd-fuse" name="sd-fuse" remote="origin" revision="refs/heads/kernel-6.1.y-boarddogwrt">
     <linkfile dest="out" src="out"/>
   </project>
 
-  <!-- friendlyelec device configs -->
-  <project path="device/common" name="friendlywrt_device_common" remote="origin" revision="refs/heads/master" />
-  <project path="device/friendlyelec" name="friendlywrt_device_rk3568" remote="origin" revision="refs/heads/master-v23.05" />
-  <project path="configs" name="friendlywrt_configs" remote="origin" revision="refs/heads/master-v23.05" />
+  <!-- device configs -->
+  <project path="device/common" name="device_common" remote="origin" revision="refs/heads/boarddogwrt" />
+  <project path="device/boarddogwrt" name="device" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
+  <project path="configs" name="configs" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
 
-  <!-- friendlyelec scripts -->
-  <project path="scripts" name="friendlywrt_scripts" remote="origin">
+  <!-- scripts -->
+  <project path="scripts" name="scripts" remote="origin" revision="refs/heads/boarddogwrt">
     <linkfile dest="build.sh" src="build.sh"/>
   </project>
 
-  <!-- friendlywrt source code -->
-  <project path="friendlywrt" name="friendlywrt" remote="origin" revision="refs/heads/master-v23.05" />
+  <!-- source code -->
+  <project path="boarddogwrt" name="openwrt" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
 
   <!-- toolchain -->
-  <project path="toolchain" name="prebuilts" remote="origin" revision="refs/heads/master" />
+  <project path="toolchain" name="prebuilts" remote="origin" revision="refs/heads/boarddogwrt" />
 </manifest>
