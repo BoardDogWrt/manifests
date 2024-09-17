@@ -14,7 +14,7 @@
 
   <!-- device configs -->
   <project path="device/common" name="device_common" remote="origin" revision="refs/heads/boarddogwrt" />
-  <project path="device/boarddogwrt" name="device" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
+  <project path="device/boarddog" name="device" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
   <project path="configs" name="configs" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
 
   <!-- scripts -->
@@ -26,5 +26,5 @@
   <project path="boarddogwrt" name="openwrt" remote="origin" revision="refs/heads/master-v23.05-boarddogwrt" />
 
   <!-- toolchain -->
-  <project path="toolchain" name="prebuilts" remote="origin" revision="refs/heads/boarddogwrt" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-11.3-x86_64-aarch64-none-linux-gnu" name="gcc-arm-11.3-x86_64-aarch64-none-linux-gnu" remote="origin" revision="refs/heads/boarddogwrt" />
 </manifest>
