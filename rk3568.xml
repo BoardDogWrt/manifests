@@ -27,4 +27,8 @@
 
   <!-- toolchain -->
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-11.3-x86_64-aarch64-none-linux-gnu" name="gcc-arm-11.3-x86_64-aarch64-none-linux-gnu" remote="origin" revision="refs/heads/boarddogwrt" />
+
+  <!-- app -->
+  <project path="app/theme/luci-theme-argon" name="luci-theme-argon" remote="origin" revision="refs/heads/boarddogwrt-dev" />
+  <project path="app/config/luci-app-argon-config" name="luci-app-argon-config" remote="origin" revision="refs/heads/boarddogwrt-dev" />
 </manifest>
